@@ -1,0 +1,127 @@
+/* 
+This style sheet can be used for reference
+but not for an assignment.
+*/
+
+/* Center the body in the middle of the viewport 
+by defining min and max widths with auto right/left margins
+*/
+body {       /* Can alternatively define in html {} or :root {} */
+  color:darkslategray;
+  background-color:rgb(215,63,9,.1);
+  font-family:'Courier New', Courier, monospace;
+  font-size:1vw;
+  margin:1px;
+  padding:3px;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    background-color:rgb(225, 236, 188);
+    text-align:center;
+    color:darkslategray;
+    border:5px;
+    font-size:1vw;
+    font-weight:normal;
+    margin:0; 
+    padding:0;
+  }
+  main {
+    background-color:rgb(215,63,9,.1);
+    color:darkslategray;
+    border:2px;
+    padding:1%;
+  }
+  footer {
+    background-color:rgb(215,63,9,.1);
+    color:darkslategray;
+    border:solid 1px darkolivegreen;
+    font-size:.8vw;
+    font-weight:bold;
+    margin:0; 
+    padding:0;
+    position: fixed;
+    bottom:0;
+  }
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    text-align:center;
+    background-color:rgb(225, 236, 188);
+    color:darkolivegreen;
+    border:1px solid black;
+    font-size:2vw;
+    font-weight:normal;
+    margin:5px; 
+    padding:0;}
+  nav a {
+    text-align:center;
+    background-color:rgba(240, 243, 230, 0.2);
+    color:darkolivegreen;
+    border:0px solid black;
+    font-size:2vw;
+    font-weight:normal;
+    margin:5px; 
+    padding:0;}
+  nav a:hover {
+    background-color:rgb(215,63,9,.3);
+    color:royalblue;
+    border:1px solid black;
+    font-size:2.2vw;
+    font-weight:bold;
+    margin:0; 
+    padding:0;}
+
+/*  ----- Table ----- */
+table {
+    border-collapse:collapse;
+    width:50em;
+  }
+  caption {  
+    border:1px solid gray;  
+    font-weight:bold;
+    padding:1% 0;
+  }
+  thead {
+    height:70px;
+    text-align:center;
+    border:1px solid black;
+    font-size:smaller;
+  }
+  tbody {
+    text-align:left;
+    border:1px solid gray;
+  }
+  tfoot {}
+  tr {
+    border-bottom:1px;
+    padding:1%;
+  }
+    tr:nth-child(even) {
+      background-color:rgb(215,63,9,.1)
+    }
+  th {
+    border:1px solid gray;
+    padding:1%;
+  }
+  td {
+    border:1px solid gray;
+    border-bottom:1px;
+    padding:0;
+    text-align:center;
+  }
+
+
+/*  ----- Form ----- */
+  button {
+    font-family:'Courier New', Courier, monospace;
+    padding:0;
+  }
+  input {
+    font-family:'Courier New', Courier, monospace;
+    padding:0;
+  }
+  form {}
+  select {}
+    optgroup {}
+    option {}
